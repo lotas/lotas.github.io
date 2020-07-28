@@ -1,0 +1,26 @@
+{
+  "name": "yaraslav.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "jsonresume-theme-elegant": "^1.12.1"
+  },
+  "devDependencies": {
+    "jsonresume-theme-shorter-bill": "^0.2.0",
+    "jsonresume-theme-spartacus": "^1.0.0",
+    "resume-cli": "^0.4.19"
+  },
+  "scripts": {
+    "start": "jekyll serve",
+    "resume:publish": "resume publish --theme shorter-bill",
+    "resume:publish:2": "resume publish --theme spartacus",
+    "resume:export:pdf": "resume export cv.pdf --theme elegant"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:lotas/lotas.github.io.git"
+  },
+  "author": "Yaraslau Kurmyza <lotask@gmail.com>",
+  "license": "ISC"
+}

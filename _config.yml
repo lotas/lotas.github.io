@@ -1,0 +1,34 @@
+# Site settings
+title: Yaraslau Kurmyza
+email: yaraslau.kurmyza@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Frontend, Backend, Mobile, WebRTC,
+  JavaScript, PHP, Java, Ruby
+
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://yaraslav.com/" # the base hostname & protocol for your site
+
+
+exclude:
+  - "node_modules/"
+  - "credentials.json"
+  - "Gruntfile.js"
+  - "package.json"
+
+# Build settings
+markdown: kramdown
+
+# Includes an icon in the footer for each username you enter
+footer-links:
+  dribbble:
+  email: yaraslau.kurmyza@gmail.com
+  facebook:
+  flickr:
+  github: lotas
+  instagram:
+  linkedin: yaraslaukurmyza
+  pinterest:
+  rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
+  twitter: lotask
+  stackoverflow: yarik # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  youtube: # channel/<your_long_string> or user/<user-name>

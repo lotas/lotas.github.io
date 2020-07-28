@@ -1,0 +1,82 @@
+.resume {
+	margin-top: 20px;
+	text-align: center;
+}
+.linkedin-widget {
+	text-align: center;
+}
+
+a[data-lang] {
+	border-bottom: 1px dashed $brand-color;
+}
+
+.pull-right {
+	float: right;
+}
+.pull-left {
+	float: left;
+}
+
+ul.thumbnails {
+	list-style-type: none;
+}
+
+img.responsive {
+    width: 100%;
+    max-width: 128px;
+}
+img.responsive2 {
+    max-height: 200px;
+    height: 100%;
+}
+.center {
+    text-align: center;
+}
+
+.logo-in-text {
+    text-align: center;
+    margin: 10px;
+}
+
+.project {
+    margin: 10px 10px 50px 10px;
+    min-height: 400px;
+}
+.project h1 {
+    font-size: 2em;
+    font-family: Verdana;
+    margin-bottom: 20px;
+    color: #009EDF;
+    border-bottom: 1px dashed #009EDF;
+    padding-bottom: 6px;
+}
+h4 {
+    font-size: 1.2em;
+    color: #009EDF !important;
+    font-family: Verdana;
+}
+.row {
+    width: 100%;
+    margin: 0 20px;
+    clear: both;
+}
+.row .col-half {
+    width: 49.9%;
+    padding: 5px 15px;
+    float: left;
+}
+
+.info {
+    text-align: left;
+    background: initial;
+    border: none;
+    font-family: monospace;
+    color: #455C75;
+}
+
+@media (max-width: 768px) {
+    .row .col-half {
+        float: none;
+        width: 100%;
+    }
+}

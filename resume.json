@@ -1,0 +1,333 @@
+{
+  "basics": {
+    "name": "Yaraslau Kurmyza",
+    "label": "Fullstack Developer",
+    "picture": "",
+    "email": "yaraslau.kurmyza@gmail.com",
+    "phone": "",
+    "website": "http://yaraslav.com",
+    "summary": "People call me Yarik, if they don't want to break their tongue pronouncing Yaraslau. I love learning and trying new things out, working on challenging projects and having  smart people around. Most of my time I'm doing backend/frontend/devops and sometimes Python. Sometimes native for Android.",
+    "location": {
+      "address": "",
+      "postalCode": "12160",
+      "city": "Berlin",
+      "countryCode": "DE",
+      "region": ""
+    },
+    "profiles": [
+      {
+        "network": "Twitter",
+        "username": "lotask",
+        "url": "https://twitter.com/lotask"
+      },
+      {
+        "network": "github",
+        "username": "lotas",
+        "url": "https://github.com/lotas"
+      },
+      {
+        "network": "gitlab",
+        "username": "lotask",
+        "url": "https://gitlab.com/lotask"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Elucidate",
+      "position": "Principal Engineer",
+      "website": "https://elucidate.co",
+      "startDate": "2018-11-01",
+      "summary": "An innovative SaaS-based solution for FinCrime Risk Management.",
+      "highlights": [
+        "Microservices",
+        "Kubernetes",
+        "Gitlab CI/CD",
+        "Node.js, Python",
+        "Vue.js, Vuex, Vue-ORM",
+        "DevOps"
+      ]
+    },
+    {
+      "company": "Daimler Mobility Services",
+      "position": "System Architect and Tech Lead",
+      "website": "https://www.daimler.com/products/services/mobility-services/",
+      "startDate": "2017-11-01",
+      "endDate": "2018-11-01",
+      "summary": "Autonomous fleet management. Ride-hailing app working on top of asynchronous and distributed microservice-based backend. Was responsible for the backend architecture, development guidelines and system design.",
+      "highlights": [
+        "Microservices based architecture",
+        "Kubernetes",
+        "Gitlab CI/CD",
+        "Node.js, Typescript, Python, Golang",
+        "RabbitMQ",
+        "React, Redux"
+      ]
+    },
+    {
+      "company": "Croove",
+      "position": "Head of Web",
+      "website": "https://letscroove.com",
+      "startDate": "2017-05-01",
+      "endDate": "2017-10-30",
+      "summary": "Croove is the new car rental community from Daimler for people who don't always need their cars and also for those who would would like to rent one for a couple of days - it's like AirBnB for cars, open for all brands. Croove was aquired by TURO.",
+      "highlights": [
+        "Leading the web team",
+        "Working on microservice-based architecture",
+        "Code reviews / pair programming / mentoring",
+        "Improving build toolchain and dev experience",
+        "Promoting best practices and techniques"
+      ]
+    },
+    {
+      "company": "Crosslend",
+      "position": "Lead Frontend Developer",
+      "website": "https://uk.crosslend.com",
+      "startDate": "2014-10-01",
+      "endDate": "2017-05-01",
+      "summary": "Crosslend is a European cross-border lending platform to connect borrowers and investors from different european countries.",
+      "highlights": [
+        "Leading the team of the frontend developers",
+        "Code reviews / pair programming / mentoring",
+        "Improving build toolchain and dev experience",
+        "Managing deployment and CI/CD processes",
+        "Developing WebRTC video solution based on Kurento Media Server",
+        "Planning team Sprints"
+      ]
+    },
+    {
+      "company": "Loliful",
+      "position": "side project, full-stack developer",
+      "website": "https://loliful.io",
+      "startDate": "2003-05-01",
+      "summary": "The world's first app for creating jokes collaboratively",
+      "highlights": [
+        "Full development lifecycle",
+        "Automated deployment with CI/CD",
+        "Server monitoring, logs management",
+        "Slack bot and Facebook Messenger integrations"
+      ]
+    },
+    {
+      "company": "crobo",
+      "position": "Senior software developer",
+      "website": "https://www.crobo.com/",
+      "startDate": "2014-05-01",
+      "endDate": "2014-09-30",
+      "summary": "Developing online marketing platform",
+      "highlights": [
+        "PHP, Symfony2, REST API",
+        "Elasticsearch, MySQL, Redis",
+        "Angular.js SPA"
+      ]
+    },
+    {
+      "company": "Die Kapitaene",
+      "position": "Software developer",
+      "website": "http://www.die-kapitaene.de/",
+      "startDate": "2012-09-24",
+      "endDate": "2014-04-30",
+      "summary": "Building SMS messaging platform, Lovoo dating platform and other services ",
+      "highlights": [
+        "PHP, Symfony2",
+        "Angular.js"
+      ]
+    },
+    {
+      "company": "Yangutu",
+      "position": "Team Lead",
+      "website": "https://meetville.com/",
+      "startDate": "2010-06-01",
+      "endDate": "2012-09-20",
+      "summary": "Building and leading online dating platform.",
+      "highlights": [
+        "Highload ",
+        "PHP, ZendFramework",
+        "Sphinx search",
+        "MySQL, redis, memcache",
+        "JavaScript, jQuery, jQuery mobile, Facebook Canvas app"
+      ]
+    },
+    {
+      "company": "Somedia (HunanoIT)",
+      "position": "Lead developer, System architect",
+      "website": "http://humanoit.ru/",
+      "startDate": "2008-11-01",
+      "endDate": "2012-09-30",
+      "summary": "High-loaded web projects, social networks, optimizations.",
+      "highlights": [
+        "PHP, ZendFramework",
+        "Apache, nginx",
+        "FB, Twitter"
+      ]
+    },
+    {
+      "company": "",
+      "position": "Software Developer",
+      "website": "https://www.itransition.com/",
+      "startDate": "2005-09-01",
+      "endDate": "2008-10-30",
+      "summary": "Worked on a wide range of projects and stack. Both in junior and senior positions plus team lead and product manager",
+      "highlights": [
+        "ASP.NET C# projects",
+        "PHP4/5, ZendFramework",
+        "jQuery, prototype.js, Ext.js"
+      ]
+    },
+    {
+      "company": "F1man",
+      "position": "side project",
+      "website": "https://f1man.net/",
+      "startDate": "2008-01-01",
+      "summary": "F1 Community predictions manager",
+      "highlights": [
+        "PHP, MySQL, memcache"
+      ]
+    },
+    {
+      "company": "Mutiful",
+      "position": "side project",
+      "website": "https://play.google.com/store/apps/details?id=space.eya.mutiful",
+      "startDate": "2014-01-01",
+      "endDate": "2015-01-01",
+      "summary": "Simple application to control smartphone volume remotely with SMS.",
+      "highlights": [
+        "Android (Java)"
+      ]
+    },
+    {
+      "company": "Komundroid",
+      "position": "side project",
+      "website": "https://play.google.com/store/apps/details?id=com.yaraslav",
+      "startDate": "2010-09-01",
+      "endDate": "2014-10-01",
+      "summary": "Android application to keep track of accounting costs for utilities",
+      "highlights": [
+        "Android (Java)"
+      ]
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "Grodno State University",
+      "area": "Applied Maths and Information Technology",
+      "studyType": "Bachelor of Science",
+      "startDate": "1999-09-01",
+      "endDate": "2004-06-01",
+      "gpa": "",
+      "courses": [
+        "Cryptography",
+        "Assembly",
+        "Statistics",
+        "Linear Algebra",
+        ""
+      ]
+    }
+  ],
+  "awards": [],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Backend Development",
+      "level": "Master",
+      "keywords": [
+        "PHP",
+        "Node.js",
+        "ASP.net",
+        "Python",
+        "Go"
+      ]
+    },
+    {
+      "name": "Frontend Development",
+      "level": "Master",
+      "keywords": [
+        "ES6/7",
+        "Angular.js",
+        "React, ReactNative, Redux",
+        "WebRTC"
+      ]
+    },
+    {
+      "name": "Devops",
+      "level": "",
+      "keywords": [
+        "AWS services",
+        "Monitoring",
+        "Linux administration",
+        "Docker"
+      ]
+    },
+    {
+      "name": "Native Mobile Development",
+      "level": "",
+      "keywords": [
+        "Android (Java)",
+        "ReactNative (iOS/Android)"
+      ]
+    },
+    {
+      "name": "Other",
+      "level": "",
+      "keywords": [
+        "Project management",
+        "Test driven development",
+        "Mentoring "
+      ]
+    },
+    {
+      "name": "Languages & stacks",
+      "level": "",
+      "keywords": [
+        "Assembly (32 & 64bit)",
+        "Haskell & FP ",
+        "Python, Ruby",
+        "C",
+        "vim",
+        "Bash, zsh"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Full working proficiency"
+    },
+    {
+      "language": "German",
+      "fluency": "Limited working proficiency"
+    },
+    {
+      "language": "Russian",
+      "fluency": "Native"
+    },
+    {
+      "language": "Belarusian",
+      "fluency": "Native"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Guitar",
+      "keywords": ["electric guitar", "classical guitar"]
+    },
+    {
+      "name": "Sports",
+      "keywords": ["Formula-1", "Football", "Ice Hockey", "Basketball", "Racing"]
+    },
+    {
+      "name": "Cycling",
+      "keywords": ["biking", "bicycle"]
+    },
+    {
+      "name": "Travelling",
+      "keywords": ["travelling", "exploring"]
+    },
+    {
+      "name": "Photography",
+      "keywords": ["mirrorless", "dslr", "drone"]
+    }
+  ],
+  "references": []
+}
