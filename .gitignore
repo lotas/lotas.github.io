@@ -2,3 +2,4 @@ _site
 .sass-cache
 credentials.json
 node_modules
+.jekyll-cache

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+	<title>Замолчатель. Ты Где? - Включить и выключить громкость телефона через СМС</title>
+	<meta http-equiv="content-language" content="en-US">
+	<meta name="description" content="Помогает с помощью СМС включить или выключить тихий режим телефона">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300,700,400' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="../styles.css">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="../apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="../android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="../favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+<link rel="manifest" href="../manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+    <link rel="android-app" href="android-app://space.eya.mutiful/http/www.eya.space/mutiful/index.html">
+</head>
+<body>
+    <div class="header">
+        <img src="../img/mutiful_logo.svg" class="logo" alt="Замолчатель. Громкость через СМС" />
+        <img src="../img/mutiful_logotype.svg" class="logotype" alt="Замолчатель. Ты где. Громкость через СМС" />
+         <aside>
+            <a href="https://play.google.com/store/apps/details?id=space.eya.mutiful" title="Скачать Замолчатель с Play Google">
+                <img src="http://developer.android.com/images/brand/en_generic_rgb_wo_60.png" title="Mutiful app to control volume with sms">
+            </a>
+            <a class="btn" href="app/" title="Запустите Замолчатель в браузере">Попробовать</a>
+        </aside>
+    </div>
+    <section class="container">
+        <h1>Замолчатель - управляй громкостью с помощью СМС</h1>
+        <h2>Включите громкость вашего телефона с помощью СМС.
+Выключите громкость вашего телефона с помощью СМС.</h2>
+
+    <nav class="tabs" ng-init="tab='main'">
+        <a ng-click="tab='main';" ng-class="{active: tab=='main'}">О Программе</a>
+        <a ng-click="tab='how';" ng-class="{active: tab=='how'}">Как это работает?</a>
+        <a ng-click="tab='faq';" ng-class="{active: tab=='faq'}">ЧаВо</a>
+        <a ng-click="tab='ui';" ng-class="{active: tab=='ui'}">UI/UX</a>
+        <a ng-click="tab='interaction';" ng-class="{active: tab=='interaction'}">Взаимодействие</a>
+        <a ng-click="tab='testimonials';" ng-class="{active: tab=='testimonials'}">Отзывы</a>
+        <a ng-click="tab='links';" ng-class="{active: tab=='links'}">Ссылки</a>
+    </nav>
+
+<div class="tab-contents">
+        <article id="main" ng-class="{active: tab=='main'}">
+        <p>Замолчатель - это простой способ найти свой телефон или телефон того, кто вам дорог</p>
+
+<h4>Основные функции:</h4>
+<ul>
+    <li>Выключить тихий режим телефона с помощью СМС</li>
+    <li>Выключить звук телефона с помощью СМС</li>
+</ul>
+
+<h4>Примеры СМС сообщений</h4>
+<ul>
+    <li>Ты где пропал?</li>
+    <li>Подними трубку</li>
+    <li>Выключи громкость</li>
+    <li>Цыц!</li>
+    <li>Включи громкость телефона</li>
+</ul>
+</article>
+
+<article id="how" ng-class="{active: tab=='how'}">
+<h4>Как это работает?</h4>
+<p>Вы теряли телефон и не могли на него позвонить, потому что он был в беззвучном режиме?</p>
+<p></p>
+Вы не могли дозвониться до вашей жены, мужа или друга, потому что они забыли выключить беззвучный режим? Или вы оставили телефон в офисе <p>и не хотите, чтобы он издавал звуки? Ваш ребёнок пошёл в школу с телефоном, но забыл выключить звонки?</p>
+<p></p>
+<p>Значит, это приложение как раз для вас! </p>
+Вы просто отправляете на телефон (на котором установлено это приложение) СМС с определённым текстом, например, "ты куда пропал?", и <p>телефон автоматически выйдет из беззвучного режима и начнёт проигрывать мелодию звонка.</p>
+<p>Вы сможете быстро дозвониться до близкого вам человека.</p>
+<p></p>
+<p>Приложение позволит вам выбрать тип оповещения и ключевые слова в СМС.</p>
+</article>
+
+<article id="faq" ng-class="{active: tab=='faq'}">
+<h4>FAQ:</h4>
+<p>Частые вопросы и ответы:</p>
+<p></p>
+<p>Вопрос: Достаточно ли установить программу только на мой телефон?</p>
+Ответ: Да, если вы хотите найти свой телефон. Если вы хотите дозвониться до жены, мужа или друга/подруги, то программа должна быть <p>установлена и на их телефоны.</p>
+<p></p>
+<p>Вопрос: Вы читаете все мои СМС?</p>
+<p>Ответ: Нет, это делает ваш телефон. Он проверяет входящее СМС–сообщение на содержание ключевых слов.</p>
+<p></p>
+<p>Вопрос: А мои личные данные?</p>
+<p>Ответ: Нет! Всё, что делает программа – это ждёт ключевую фразу во входящем СМС и включает громкость!</p>
+<p></p>
+<p>Вопрос: Вы отправляете мои СМС в интернет?</p>
+Ответ: Нет! Приложение не запрашивает разрешение на пользование Интернетом, следовательно, Android будет блокировать всякую попытку <p>использовать его.</p>
+<p></p>
+<p>Вопрос: Эта программа может отправлять СМС и тратить мои деньги?</p>
+<p>Ответ: Нет! Для отправки СМС необходимы дополнительные разрешения Android, которые программа не запрашивает.</p>
+<p></p>
+<p>Вопрос: Оно постоянно жужжит и вибрирует на все СМС!!!</p>
+Ответ: Попробуйте изменить ключевые слова так, чтобы они были достаточно редкими и не встречались во входящих СМС. Например, "телефон, <p>найдись!" или "включите, пожалуйста, громкость" и т.д.</p>
+<p></p>
+<p>Вопрос: Входящее СМС должно быть точь–в–точь как ключевая фраза?</p>
+Ответ: Необязательно, например, для СМС "о, телефон, ты где? включи мне громкость поскорее" сработает для ключевых фраз: "ты где?" или <p>"ВКЛЮЧИ МНЕ ГРОМКОСТЬ" или "О, Телефон, Ты Где"</p>
+<p></p>
+<p>Вопрос: Мой телефон стал жутко тормозить!</p>
+Ответ: И эта программа не может служить тому причиной. Она выполняется только в момент получения СМС, и, если ключевой фразы не найдено, <p>прекращает свою работу.</p>
+<p></p>
+<p></p>
+</article>
+<article id="interaction" ng-class="{active: tab=='interaction'}">
+    <h4>Взаимодействие</h4>
+ <img ng-if="tab=='interaction'" src="../img/mutiful_interaction.gif" alt="Замолчатель. Управляй тихим режимом через СМС" />
+</article>
+<article id="ui" ng-class="{active: tab=='ui'}" ng-if="tab=='ui'">
+    <h4>UI/UX</h4>
+
+    <img src="../img/001_app_UI_settings_loud.jpg" alt="Mutiful get loud settings" title="Mutiful get loud settings" />
+    <img src="../img/002_app_UI_settings_mute.jpg" alt="Mutiful mute settings" title="Mutiful mute settings" />
+    <img src="../img/003_app_UI_alarm_window_loud.jpg" alt="Mutiful alarm loud" title="Mutiful alarm loud"  />
+    <img src="../img/004_app_UI_alarm_window_mute.jpg" alt="Mutiful alarm mute" title="Mutiful alarm mute"  />
+    <img src="../img/005_app_UI_about.jpg" alt="About Mutiful" title="About Mutiful"  />
+    <img src="../img/006_app_UI_help.jpg" alt="Mutiful help screen - get loud options" title="Mutiful help screen - get loud options"  />
+    <img src="../img/007_app_UI_help.jpg" alt="Mutiful help screen - mute options" title="Mutiful help screen - mute options" />
+    <img src="../img/008_app_UI_help.jpg" alt="Mutiful help screen - alert window" title="Mutiful help screen - alert window" />
+
+</article>
+<article id="testimonials" ng-class="{active: tab=='testimonials'}">
+    <h4>Отзывы</h4>
+    <ul>
+        <li>Отличное приложение,а главное простое в использовании</li>
+<li>Отличный и полезный софт	Спасибо ребята!</li>
+<li>Круть спс</li>
+<li>Отличное приложение, спасибо!</li>
+<li>Отлично	Спасибо, полезное приложение</li>
+<li>Спасибо, дорогой друг, за прекрасную пепяку.</li>
+<li>Поставил дочке, теперь она будет чуть реже получать выговоры за то, что пропарила трубу в квартире, отключив звук.</li>
+Это гениально.	Идея прям как а Американском Папаше:) Для меня приложение довольно полезное, т.к. телефон почти всегда на беззвучном <li>режиме:) Аффтор гений:3</li>
+<li>Отлично. У меня улучшилось зрение, кожа стала чище и морщины расправились!</li>
+<li>Это прекрасно! Джва года ждал такую программу! Спасибо!</li>
+<li>Прекрасно! Спасибо!</li>
+<li>Спасибо!	Спасибо большое! С лепроприветом!</li>
+<li>+реально работает	жена останется в живых :)</li>
+Fantastic app! Beautiful design, works great, and is a lot of fun if you know someone else's code ;) ! Watch out though, with great power <li>comes great responsibility!</li>
+    </ul>
+</article>
+
+
+
+<article id="links" ng-class="{active: tab=='links'}">
+   <h4>Ссылки</h4>
+   <p>Упоминания о программе в интернете:</p>
+    <ul>
+        <li><a href="http://www.reddit.com/search?q=mutiful" title="Reddit posts about Mutiful">Reddit</a></li>
+        <li><a href="https://news.ycombinator.com/item?id=9655113" title="Mutiful on YC">YC</a></li>
+    </ul>
+
+    <a href="https://play.google.com/store/apps/details?id=space.eya.mutiful" title="Mutiful app to control volume with sms">
+        <img src="http://developer.android.com/images/brand/en_generic_rgb_wo_60.png" title="Mutiful app to control volume with sms">
+    </a>
+</article>
+
+</div>
+</section>
+
+<div class="fb-like" data-href="http://www.eya.space/mutiful/" data-layout="standard" data-action="recommend" data-show-faces="true" data-share="true" data-width="600"></div>
+
+    <footer itemscope>
+       <p class="pull-right">
+           &copy; 2015
+       </p>
+        <p>Разработка by <a itemprop="name" href="http://yaraslav.com">Ярослав Курмыза</a> &amp; <a href="http://izhik.com" itemprop="name">Игорь Ижик</a></p>
+    </footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.min.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-63733168-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=149093701781648";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+</body>
+</html>

@@ -1,0 +1,287 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 1.1em;
+    color: #e7ee25;
+    text-align: center;
+    
+    font-family: 'Roboto', sans-serif;
+}
+* {
+    font-family: 'Roboto', sans-serif;
+}
+a {
+    cursor: pointer;
+}
+.phone {
+    position:absolute;
+    left:50%;
+    margin-top:0;
+    padding: 0;
+    margin-left: -360px;
+    width: 720px;
+    height: 1280px;
+    border: 1px solid #262329;
+    background: url('../img/bg.jpg') 0 0  no-repeat;
+    background-size: cover;
+}
+
+.alert {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding-top: 250px;
+
+    z-index: 1000;
+    color: #fff;
+    background: #010112;
+/*    opacity: 0.95;*/
+    font-size: 2em;
+    font-weight: 300;
+}
+.alert button {
+    opacity: 1;
+    font-size: 2em;
+}
+h4 {
+    font-size: 1.6em;
+    font-weight: 100;
+    color: #eee;
+}
+.button {
+   background: #e7ee25;
+    color: #262329;
+    border-radius: 60px;
+    text-align: center;
+    padding: 8px 0 8px;
+    margin: 30px 50px;
+    font-size: 3em;
+    line-height: 80px;
+    font-weight: 700;
+    display: block;
+    width: 620px;
+}
+
+.tab input {
+    display: block;  
+    width: 650px;
+    line-height: 70px;
+    margin: 50px 50px;
+    font-size: 2.8em;
+    text-indent: 45px;
+    font-weight: 100;
+    background: transparent;
+    border: 0;
+    border-bottom: 4px solid #eee;
+    color: #eee;
+}
+.tab input:focus{
+    border-bottom: 4px solid #e7ee29;
+}
+.tab label {
+    text-align: left;
+    text-indent: 45px;
+    color: #eee;
+    font-size: 2.2em;  
+    font-weight: 100;
+    padding: 20px 0 20px;
+    border: 3px solid #eee;
+    display: block;
+    margin: 30px 50px;
+    border-radius: 60px;
+    position: relative;
+}
+.tab label.active {
+    color: #e7ee25;
+    border: 3px solid #e7ee25;
+}
+.tab label input[type=checkbox] {
+    display: none;
+}
+.tab label .cbx {
+    display: block;
+    position: absolute; right: 50px; top: 27px;
+    border: 3px solid #CCC;
+    border-radius: 30px;
+    width: 25px;
+    height: 25px;
+}
+.tab label.active .cbx {
+    margin-top: -5px;
+    border:0; width:0;height:0;
+    display:inline-block;
+    width: 22px;
+    height:22px;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+}
+.tab label.active .cbx .stem {
+    position: absolute;
+    width: 3px;
+    height: 32px;
+    background-color:#e7ee25;
+    left: 20px;
+    top: 0px;
+}
+.tab label.active .cbx .kick {
+    position: absolute;
+    width: 14px;
+    height: 3px;
+    background-color:#e7ee25;
+    left:9px;
+    top:29px;
+}
+}
+
+.tab label input {
+    position: absolute;
+    right: 30px;
+    top: -20px;
+    width: 40px;
+}
+.container {
+    width: 720px;
+    overflow: hidden;
+}
+.tabs-container {
+    width: 1440px;
+}
+.tab {
+    float: left;
+    width: 720px;
+}
+
+
+
+nav {
+    margin:0;
+    padding-top:10px;
+    background: #090112;
+    padding-left: 0;
+}
+nav ul {
+    padding-left: 0;
+}
+nav li {
+    list-style-type: none;
+    display: inline-block;
+    height: 48px;
+    text-align: center;
+    width: 49%;
+    padding: 10px 0 0 0;
+}
+nav li a {
+    color: #CCC;
+    text-decoration: none;
+    font-size: 1.6em;
+    font-weight: 400;
+}
+nav li.active {
+    border-bottom: 4px solid #e7ee25;
+}   
+nav li.active a {
+    color: #fff;
+}
+nav li:hover a{
+    color: #eee;
+}   
+
+
+/* app bar */
+.appbar {
+    width: 100%;
+    padding: 10px 0;
+    margin:0;   
+    background: #090112;    
+}
+.appbar nav {
+    float: right;
+    
+    margin: auto 40px;
+    position: relative;
+}
+.appbar h1 {
+    font-size: 2em;
+    font-weight: 400;
+    color: #fff;
+    text-align: left;
+    text-indent: 40px
+}
+.appbar h1 span {
+    font-weight: 100;
+    margin-left: 10px;
+    color: #eee;
+    opacity: 0.3;
+}
+.appbar .overflow-c {
+    width: 40px;
+    text-align: center;
+    padding: 0 10px;
+}
+.appbar .overflow {
+    font-size: 2em;
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+    display:block; 
+    margin-top: 10px;
+    width: 40px;
+    height: 40px
+}
+.appbar .menu ul {
+    position: absolute;
+    right: -20px;
+    top: -10px;
+    display: block;
+    width: 200px;
+    background: #222;
+    border: 0px solid #ccc;
+    text-align: left;
+    padding-bottom: 10px;
+    animation: menu 0.4s linear;
+    overflow:hidden;
+}
+
+.appbar .menu ul li {
+    text-align: left;
+    text-indent: 20px;
+    width: 100%;
+    font-size: 1.4em;
+    height: 42px;
+    font-weight: 400;
+    line-height: 2em;
+    color: #eee;
+}
+.appbar .menu ul li a {
+    font-size: 1em;
+}
+
+
+@keyframes menu {
+    from { top: -200px; }
+    to { top: -10px;}
+}
+
+/* about */
+.about {
+    padding: 40px;
+    width: 90%;
+    color: #eee;
+    font-size: 1.3em;
+    line-height: 1.8em;
+    text-align: left;
+}
+.about a {
+    text-decoration: none;
+    color: #e7ee25;
+    font-weight: 400;
+}
+
+
+.yellow {
+     color: #e7ee25;
+}

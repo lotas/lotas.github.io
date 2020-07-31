@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+	<title>Mutiful - Android app to control phone volume with SMS</title>
+	<meta http-equiv="content-language" content="en-US">
+	<meta name="description" content="Mutiful Android app. Locate your phone with a simple text message. Mute your phone with SMS.">
+    
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300,700,400' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="app.css">
+    
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="android-app" href="android-app://space.eya.mutiful/http/www.eya.space/mutiful/index.html">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.min.js"></script>
+</head>
+<body ng-init="app.view = 'main'">
+
+    <div class="phone" ng-init="app.alert=false">
+       <section class="alert" ng-if="app.alert" ng-click="app.alert=false">
+           <img src="../img/mutiful_logo.svg" />
+           <p>You received a message<br>
+              from <a class="yellow">+213123123</a>
+              <br>
+              "Where are you?"
+              </p>
+           <p>which made your phone loud</p>
+            <button class="button" ng-click="app.alert=true">DISMISS</button>
+
+       </section>
+        <section class="appbar">
+            <nav class="menu">
+                <div class="overflow-c" ng-click="showMenu = !showMenu" ng-init="showMenu=false">
+                    <a class="overflow" >...</a>
+                </div>
+                <ul ng-show="showMenu">
+                    <li ng-click="app.view='help';showMenu=false;"><a>Help</a></li>
+                    <li ng-click="app.view='about';showMenu=false;"><a>About</a></li>
+                    <li ng-click="app.view='share';showMenu=false;"><a>Share this app</a></li>
+                </ul>
+            </nav>
+            <h1 ng-click="showMenu=false; app.view='main';">
+                Mutiful 
+                <span ng-show="tab.active == 'getloud'">Volume with SMS</span>
+                <span ng-show="tab.active == 'mute'">Mute with SMS</span>
+            </h1>
+            
+        </section>
+        <section ng-show="app.view=='main'" 
+                class="tabs"
+                ng-init="tab.active='getloud'"  
+                ng-click="showMenu=false">
+            <nav>
+                <ul>
+                    <li ng-class="{active: tab.active == 'getloud'}"><a ng-click="tab.active='getloud'" >GET LOUD</a></li>
+                    <li ng-class="{active: tab.active == 'mute'}"><a ng-click="tab.active='mute'" >MUTE</a></li>                
+                </ul>
+            </nav>
+        </section>
+        <section class="container" ng-show="app.view == 'main'">
+            <div class="tabs-container">
+                <div class="tab" id="getloud" ng-show="tab.active == 'getloud'">
+                    <h4>Keyword</h4>
+                    <div class="textedit">
+                        <input type="text" value="Where are you" class="textedit" />
+                    </div>
+                    <label ng-class="{active: tab1.vibrate}">
+                        Vibrate <input type="checkbox" ng-model="tab1.vibrate" />
+                        <span class="cbx">
+                            <div class="stem"></div>
+                            <div class="kick"></div>
+                        </span>
+                    </label>
+                    <label ng-class="{active: tab1.music}">
+                        Play Music <input type="checkbox" ng-model="tab1.music" />
+                        <span class="cbx">
+                            <div class="stem"></div>
+                            <div class="kick"></div>
+                        </span>
+                    </label>
+                    <button class="button" ng-click="app.alert=true">TEST IT</button>
+                </div>
+                <div class="tab mute" id="mute" ng-show="tab.active == 'mute'">
+                    <h4>Keyword</h4>
+                    <input type="text" value="Shush" />
+                    <button class="button" ng-click="app.alert=true">TEST IT</button>
+                </div>
+            </div>
+        </section>
+        <section class="container about" ng-show="app.view=='about'">
+            <p>Mutiful helps you to find your phone when it's in silent mode or reach someone who forgot to switch back from silent.</p>
+            
+            <p>It also helps to mute your phone if you left the phone somewhere it may disturb people around with your fancy ringtone.
+            </p>
+            <br>
+            <p>Developed by Yaraslau Kurmyza<br>
+            <a href="http://yaraslav.com">yaraslav.com</a></p>
+            <p>UI/UX by Igor Izhik<br>
+            <a href="http://izhik.com">izhik.com</a></p>
+        </section>
+        <section class="container about" ng-show="app.view=='help'">
+            <p>Just click around .. </p>
+        </section>
+        <section class="container about" ng-show="app.view=='share'">
+            <p>Please tell your friends about this Mutiful app</p>
+            
+            
+            <span class='st_sharethis_large' displayText='ShareThis'></span>
+            <span class='st_facebook_large' displayText='Facebook'></span>
+            <span class='st_googleplus_large' displayText='Google +'></span>
+            <span class='st_flipboard_large' displayText='Flipboard'></span>
+            <span class='st_twitter_large' displayText='Tweet'></span>
+            <span class='st_linkedin_large' displayText='LinkedIn'></span>
+            <span class='st_pinterest_large' displayText='Pinterest'></span>
+            <span class='st_email_large' displayText='Email'></span>
+            
+            <br>
+            <br>
+            
+            <p>
+                <a href="https://play.google.com/store/apps/details?id=space.eya.mutiful">
+                    <img src="http://developer.android.com/images/brand/en_generic_rgb_wo_60.png">
+                </a>
+            </p>
+        </section>
+    </div>    
+<script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "1ebc9f54-894d-47cb-8fe5-7751d6bfd5cd", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-63733168-1', 'auto');
+  ga('send', 'pageview');
+</script>
+</body>
+</html>

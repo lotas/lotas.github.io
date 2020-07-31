@@ -1,0 +1,225 @@
+body {
+    margin:0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #514f53;
+    font-size: 1.4em;
+    
+background: -moz-linear-gradient(top,  rgba(246,247,232,1) 0%, rgba(246,247,232,0.63) 22%, rgba(250,251,243,0) 59%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(246,247,232,1)), color-stop(22%,rgba(246,247,232,0.63)), color-stop(59%,rgba(250,251,243,0)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(246,247,232,1) 0%,rgba(246,247,232,0.63) 22%,rgba(250,251,243,0) 59%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(246,247,232,1) 0%,rgba(246,247,232,0.63) 22%,rgba(250,251,243,0) 59%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(246,247,232,1) 0%,rgba(246,247,232,0.63) 22%,rgba(250,251,243,0) 59%,rgba(255,255,255,0) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(246,247,232,1) 0%,rgba(246,247,232,0.63) 22%,rgba(250,251,243,0) 59%,rgba(255,255,255,0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f7e8', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+
+
+}
+.container {
+    margin: 40px 40px;
+}
+aside {
+    position:absolute;
+    margin-right: 0;
+    top: 10px;
+    right: 20px;
+    z-index: 99;
+}
+aside a {
+    display: block;
+    font-size: 1.2em;
+    color: #e7ee25;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 6px;
+}
+.btn {
+    background: #090112;
+    border: 1px solid #eee;
+    padding: 13px 20px;
+    border-radius: 10px;
+    font-size:1.2em!important;
+    color: #eee;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;  
+    margin-bottom: 6px;
+    
+}
+
+.btn:hover {
+    background: #e7ee25;
+    color: #514f53;
+}
+.btn:active {
+    background: #c7cc15;
+    color: #514f53;
+}
+
+
+h1 {
+    font-size: 8vmin;
+    text-align: center;
+    font-weight: 400;
+}
+
+h2 {
+    font-weight: 100;    
+}
+h4 {
+    font-size: 3vmin;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    max-height: 600px;
+    overflow:hidden;
+    background: url('img/pattern.jpg') 0 0 repeat;
+/*    min-height: 160px;*/
+}
+.header .logo {
+    margin: 30px 50px;
+    width: 15vh;
+}
+.header .logotype {
+    width: 25vh;
+    margin: 30px 50px;
+}
+
+
+nav.tabs {
+    margin: 60px 10px 40px 0;
+}
+nav.tabs a {
+    margin-right: 6px;
+    text-decoration: none;
+    border-bottom: 1px dotted #514f53;
+    color: #514f53;
+    font-size: 2.7vw;
+    cursor: pointer;
+    color: #000;
+    padding: 2px 4px;
+    animation: tabn 0.2s linear;
+}
+nav.tabs a:active, nav.tabs a.active {
+    background: #090112;
+    color: #eee !important;
+    border-bottom: 3px solid #e7ee25 !important;
+    border-radius: 6px;
+    animation: taby 0.2s linear;
+}
+nav.tabs a:visited {
+    color: #514f53;
+}
+.tab-contents {
+    min-height: 400px;
+}
+.tab-contents article {
+    position: relative;
+    display: none;
+    animation: tabc 0.2s linear;
+
+}
+.tab-contents article.active {
+    display: block;
+}
+article {
+    display: block;
+    margin: 30px 2px;
+}
+
+#experience img {
+    max-width: 1200px;
+    width: 100%;
+}
+#ui img {
+    width: 30vw;
+    margin-right: 1vw;
+    margin-bottom: 1vw;
+}
+
+#links ul {
+    list-style-type: none;
+}
+
+footer {
+    border-top: 1px dashed #090112;
+    margin: 30px 40px 10px 40px;
+    margin-left: 40px;
+}
+
+.pull-right {
+    float: right;
+}
+
+@media (max-width: 900px) {
+    aside {
+        text-align: center;
+        z-index: 99;
+        width: 100%;
+        height: 60px;
+/*        float:none;*/
+        padding: 0px;
+        clear: both;
+        margin-right: 10px
+    }
+    aside a {
+        font-size: 2vw !important;
+/*        display: block;*/
+        float: right;
+        margin-right: 6px;
+    }
+    h1 {
+        clear: both;
+/*        font-size: 2em !important;*/
+    }
+    nav.tabs a {
+        margin-right: 1px;
+        margin-left: 0;
+        padding: 2px 2px;
+    }
+    .header .logo,
+    .header .logotype {
+        margin: 15px 20px;
+    }
+}
+
+@keyframes tabc {
+    from {
+        left: 100%;
+    }
+    to {
+        left: 0%;
+    }
+}
+@keyframes taby {
+    from {
+        background: transparent;
+        color: #514f53 !important;
+    }
+    to {
+        background: #090112;
+        color: #eee !important;
+    }
+}
+@keyframes tabn {
+    to {
+        background: transparent;
+        color: #514f53 !important;
+    }
+    from {
+        background: #090112;
+        color: #eee !important;
+    }
+}
+
+
+.fb-like {
+    margin-left: 40px;
+    width: 70%;
+}
