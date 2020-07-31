@@ -14,13 +14,12 @@
       </a>
 
       <div class="trigger">
-        <a class="page-link" href="/yaraslau.kurmyza.pdf">Download CV</a>
-        <a class="page-link" href="#posts">Posts</a>
         {% for page in site.pages %}
-          {% if page.title and page.menuVisible == 1 %}
-          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-          {% endif %}
+        {% if page.title and page.menuVisible == 1 %}
+        <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+        {% endif %}
         {% endfor %}
+        <a class="page-link" href="/yaraslau.kurmyza.pdf">CV</a>
       </div>
     </nav>
 

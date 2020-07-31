@@ -1,3 +1,10 @@
+---
+layout: post
+title:  "KubeCon / CloudNativeCon 2018 Copenhagen"
+date:   2018-05-04
+tags: ["kubernetes", "k8s", "cloudnative"]
+---
+
 
 # KubeCon / CloudNativeCon 2018 Copenhagen
 

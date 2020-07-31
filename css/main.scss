@@ -13,12 +13,12 @@ $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       #253242;
+$text-color:       #1b2a3d;
 $background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$brand-color:      #285b9e;
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
+$grey-color:       #aaaaad;
+$grey-color-light: lighten($grey-color, 20%);
 $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
@@ -26,7 +26,6 @@ $content-width:    963px;
 
 $on-palm:          600px;
 $on-laptop:        800px;
-
 
 
 // Using media queries with like this:

@@ -1,3 +1,11 @@
+---
+layout: post
+title:  "Controlling Phillips HUE lights with Arduino"
+date:   2020-07-28
+tags: ["arduino", "sensors", "hue", "home automation"]
+---
+
+
 
 # Controlling Phillips HUE lights with Arduino
 
