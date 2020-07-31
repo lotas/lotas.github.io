@@ -149,7 +149,6 @@ void sendCommand(bool isOn) {
 
 And that should be it.
 
-
 ## Notes
 
 * PIR sensor turned out to be quite a stubborn one. It has two dials to control sensitivity and delay, and it was tricky to find the proper combination that would work in my room.
@@ -159,3 +158,202 @@ And that should be it.
   * external listeners could use additional information to control the lights
   * it could all be connected to the [Home Assistant](https://www.home-assistant.io/) for extra fun, and tracked history of events
 
+
+## Updated version with MQTT
+
+To address the issues and shortcomings of direct communication with HUE Bridge, I've changed the way how events are being handled. I push those to the MQTT which is running on a home server, driven by Raspberry Pi 4.
+
+MQTT and [Home Assistant](https://www.home-assistant.io/) are running with docker:
+
+```yaml
+version: '3'
+
+services:
+  home-assistant:
+    image: homeassistant/home-assistant:stable
+    environment:
+      - TZ=Europe/Berlin
+    ports:
+      - 8123:8123
+    volumes:
+      - ./config:/config
+
+  mqtt:
+    image: eclipse-mosquitto:1.6
+    ports:
+      - 1883:1883
+      - 9001:9001
+```
+
+Code now looks like this:
+
+```c
+#include <SPI.h>
+#include <WiFiNINA.h>
+#include <ArduinoMqttClient.h>
+
+#define SENSOR_PIN 2
+
+#define SECRET_SSID "ssid"
+#define SECRET_PASS "pass"
+
+char ssid[] = SECRET_SSID;
+char pass[] = SECRET_PASS;
+
+WiFiClient client;
+MqttClient mqttClient(client);
+
+// sensor values
+int sensorValue = 0;
+int oldValue    = 0;
+
+const char broker[]     = "192.168.55.55";  # IP of the MQTT
+int        port         = 1883;
+const char topicWrite[] = "sensors/event";  #
+const char sensorId[]   = "s1";
+
+
+void setup() {
+  Serial.begin(9600);
+
+  Serial.println("Setup pins");
+  pinMode(SENSOR_PIN, INPUT);
+  pinMode(LED_BUILTIN, OUTPUT);
+
+  // check for the WiFi module
+  if (WiFi.status() == WL_NO_MODULE) {
+    Serial.println("Communication with WiFi module failed!");
+    while (true);
+  }
+
+  String fv = WiFi.firmwareVersion();
+  if (fv < WIFI_FIRMWARE_LATEST_VERSION) {
+    Serial.println("Please upgrade the firmware");
+  }
+
+  // attempt to connect to Wifi network:
+  while (WiFi.begin(ssid, pass) != WL_CONNECTED) {
+    Serial.println("Attempting to connect to SSID: " + String(ssid));
+    delay(5000);
+  }
+  Serial.println("Connected to wifi");
+  printWifiStatus();
+
+  Serial.print("Attempting to connect to the MQTT broker: ");
+  Serial.println(broker);
+
+  if (!mqttClient.connect(broker, port)) {
+    Serial.print("MQTT connection failed! Error code = ");
+    Serial.println(mqttClient.connectError());
+    while (1);
+  }
+
+  Serial.println("We are connected to the MQTT broker!");
+  Serial.println();
+  Serial.println("Awaiting orders");
+}
+
+void loop() {
+  // call poll() regularly to allow the library to send MQTT keep alives which
+  // avoids being disconnected by the broker
+  mqttClient.poll();
+
+  sensorValue = digitalRead(SENSOR_PIN);
+
+  if (sensorValue == HIGH) {
+    if (oldValue == LOW) {
+     Serial.println("State changed to: High :)");
+     digitalWrite(LED_BUILTIN, HIGH);
+     sendCommand(true);
+    }
+  } else {
+    if (oldValue == HIGH) {
+      digitalWrite(LED_BUILTIN, LOW);
+      Serial.println("State changed to: Low :(");
+      sendCommand(false);
+    }
+  }
+  oldValue = sensorValue;
+
+  delay(50);
+}
+
+void sendCommand(bool isOn) {
+  mqttClient.beginMessage(topicWrite);
+  if (isOn == true) {
+    mqttClient.print("ON");
+  } else {
+    mqttClient.print("OFF");
+  }
+  mqttClient.print("|");
+  mqttClient.print(sensorId);
+  mqttClient.endMessage();
+}
+
+void printWifiStatus() {
+  // print the SSID of the network you're attached to:
+  Serial.print("SSID: ");
+  Serial.println(WiFi.SSID());
+
+  // print your board's IP address:
+  IPAddress ip = WiFi.localIP();
+  Serial.print("IP Address: ");
+  Serial.println(ip);
+
+  // print the received signal strength:
+  long rssi = WiFi.RSSI();
+  Serial.print("signal strength (RSSI):");
+  Serial.print(rssi);
+  Serial.println(" dBm");
+}
+
+```
+
+I've chose to publish events to the `sensor/event` with two messages `ON|s1` and `OFF|s1`. `s1` is just in case I'd add more later, and plain text for simplicity.
+It could have also been a separate queue for on/off.
+
+Now, when the sensor is only sending messages to the queue, we can do the heavy part on the Home Assistant side.
+
+For this I used built-in Automation tools, adding two listeners, one that listens to the MQTT message and turns lamp on, and the one that turns lights off.
+
+With the automation it became possible to add conditions, like execute the commands only during specific time (night), or using sunrise/sunset events for my location.
+Also I was able to add the delay for turning lamps off, to prevent it from flickering back and force too often.
+
+Automation config:
+
+```yaml
+- id: '1596129224206'
+  alias: Turn on  the lights on MQTT
+  description: ''
+  trigger:
+  - payload: ON|s1
+    platform: mqtt
+    topic: sensors/event
+  condition:
+  - after: '21:30'
+    before: 06:00
+    condition: time
+  action:
+  - brightness_pct: 70
+    device_id: 289e562dddbc4af783c23cdcc4a8b9cd
+    domain: light
+    entity_id: light.esszimmer2_lamp
+    type: turn_on
+- id: '1596130596060'
+  alias: Turn off the lights on MQTT
+  description: ''
+  trigger:
+  - payload: OFF|s1
+    platform: mqtt
+    topic: sensors/event
+  condition:
+  - after: '21:30'
+    before: 06:05
+    condition: time
+  action:
+  - delay: 00:00:20
+  - device_id: 289e562dddbc4af783c23cdcc4a8b9cd
+    domain: light
+    entity_id: light.esszimmer2_lamp
+    type: turn_off
+```
