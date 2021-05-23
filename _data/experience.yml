@@ -1,0 +1,141 @@
+- name: elucidate.co
+  type: fulltime
+  url: https://elucidate.co
+  location: Berlin
+  position: Principal Specialist
+  dates: Nov 2018 - Present
+  description: >
+    Microservice based cloud architecture.<br/>
+    Frontend applications typescript, vue.js, react, nuxt.js.<br/>
+    Serverless cloud functions to handle file uploads, report rendering, data storage interaction.
+    Report generation with puppeteer and node.js. Express.js, vue.js, vuex, vuex-orm, react-admin, plotly.js, typescript.
+    Containerized with docker and deployed with kubernetes. Backend with php + symfony, python + flask, node.js.
+
+- name: uelco.co
+  type: project
+  url: https://uelco.co
+  location:
+  position: Backend/Frontend/DevOps
+  dates: 2017 - present
+  description: >
+    SaaS to help small-mid teams to attract and onboard new team members.
+    Application written in typescript + vue.js.
+    Backend written with typescript + express.js + sequelize + PostgreSQL. Containerized with docker.
+
+- name: 4Ocean.com
+  type: freelance
+  url: https://4ocean.com
+  location:
+  position: Backend/DevOps
+  dates: Jul 2019 - Feb 2020
+  description: >
+    Implemented serverless architecture using node.js on <em>Google Cloud Platform</em> to handle real-time data synchronization.
+    Hundreds of instances and several thousand live events per second at peak times (during campaigns).
+    Vanilla javascript.
+
+- name: patientacumen.com
+  type: project
+  url: https://patientacumen.com
+  location:
+  position: Backend/Frontend/DevOps
+  dates: 2019 - present
+  description: >
+    Application to log attacks of patients with rare HAE disease.
+    Application written in typescript + vue.js + material-ui.
+    Backend written with express.js + sequelize + PostgreSQL. Containerized with Docker.
+
+- name: cardcase
+  type: freelance
+  url: '#'
+  location:
+  position: Backend/DevOps
+  dates: 2018
+  description: >
+    Mobile application to manage your google contacts, share specific profile information with others.
+    Kubernetes, node.js + express.js + PostgreSQL backend, react-native + typescript mobile app.
+
+- name: loliful.io
+  type: project
+  url: '#'
+  location:
+  position: Backend/Frontend/DevOps
+  dates: 2016 - 2017
+  description: >
+    Collaborative tool to create jokes online and share those.
+    Nodejs, loopback.js, passport.js, MySQL, Redis, Angular.js.
+    Slackbot written in node.js.
+
+- name: Daimler Mobility Services
+  type: fulltime
+  url: '#'
+  location: Berlin
+  position: System Architect, Backend
+  dates: Nov 2017 - Nov 2018
+  description: >
+    Microservice based architecture running Kubernetes.
+    Services written in node.js + sequelize + postgresql + rabbitmq, go, python + flask.
+
+- name: Croove
+  type: fulltime
+  url: '#'
+  location: Berlin
+  position: Head of Web
+  dates: May 2017 - Oct 2017
+  description: >
+    Car-rental startup from Daimler that was later acquired by TURO. React  frontend plus several node.js microservices running on kubernetes.
+
+- name: Crosslend
+  type: fulltime
+  url: https://crosslend.com
+  location: Berlin
+  position: Lead Frontend Developer
+  dates: Oct 2014 - May 2017
+  description: >
+    Built b2c and b2b lending platforms using angular.js, react, hugo.
+
+- name: Crobo
+  type: fulltime
+  url: '#'
+  location: Berlin
+  position: Senior software developer
+  dates: May 2014 - Sept 2014
+  description: >
+    Online marketing platform using angular.js, php.
+
+- name: Die Kapitaene
+  type: fulltime
+  url: '#'
+  location: Berlin
+  position: Software developer
+  dates: Sep 2012 - Apr 2014
+  description: >
+    SMS messaging back office using vanilla javascript.
+    Lovoo dating website - angular.js.
+
+- name: Yangutu
+  type: fulltime
+  url: '#'
+  location: Belarus
+  position: Team Lead
+  dates: Jun 2010 - Sep 2012
+  description: >
+    Built dating website using jquery, vanilla javascript, jquery mobile, ZendFramework, PHP, MySQL, redis, memcache, AWS.
+
+- name: Somedia (HumanoIT)
+  type: fulltime
+  url: '#'
+  location: Belarus
+  position: Lead Developer
+  dates: Nov 2008 - Jun 2010
+  description: >
+    High-load, social networks built with ZendFramework, vanilla javascript.
+
+- name: Itransition
+  type: fulltime
+  url: '#'
+  location: Belarus
+  position: Software Developer
+  dates: Sep 2005 - Oct 2008
+  description: >
+    Wide range of projects and products with PHP, C#, ASP.NET, jQuery, prototype.js, Ext.js.
+

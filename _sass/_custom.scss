@@ -1,6 +1,5 @@
 .resume {
 	margin-top: 20px;
-	text-align: center;
 }
 .linkedin-widget {
 	text-align: center;
@@ -55,16 +54,6 @@ h4 {
     color: #009EDF !important;
     font-family: Verdana;
 }
-.row {
-    width: 100%;
-    margin: 0 20px;
-    clear: both;
-}
-.row .col-half {
-    width: 49.9%;
-    padding: 5px 15px;
-    float: left;
-}
 
 .info {
     text-align: left;
@@ -74,9 +63,93 @@ h4 {
     color: #455C75;
 }
 
-@media (max-width: 768px) {
-    .row .col-half {
-        float: none;
-        width: 100%;
+.social-links {
+    a {
+        margin-right: 6px;
+        padding-right: 10px;
+        border-right: 2px solid #aaa;
+        &:last-child {
+            border-right: 0;
+        }
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    span {
+        border-bottom: 2px solid lighten($brand-color, 10%);
+    }
+}
+
+.lead {
+    font-size: $base-font-size + 4px;
+}
+
+.resume {
+    a {
+        color: #009EDF;
+        text-decoration: underline;
+    }
+    h3 {
+        .filters {
+            display: none; // hidden for now
+            float: right;
+            text-decoration: none;
+            border-bottom: 0;
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.experience {
+    border-bottom: 2px dotted #eee;
+    padding-bottom: 10px;
+    .title {
+        font-family: $optional-font-family;
+        font-size: 18px;
+        font-weight: bold;
+        margin: 12px 0 3px 0;
+        .location {
+            font-weight: 300;
+            font-size: 16px;
+            color: #555;
+            padding-left: 10px;
+        }
+        .position {
+            margin-left: 12px;
+            padding: 0 3px;
+            font-weight: 400;
+            border: 1px solid rgb(220, 250, 255);
+            background-color: rgb(220, 250, 255);
+            border-radius: 3px;
+        }
+        .type {
+            float: right;
+            font-weight: 100;
+            font-size: 12px;
+            line-height: 24px;
+            color: rgb(122, 135, 204);
+        }
+    }
+    .date {
+        color: #888;
+        font-size: 13px;
+        font-weight: 400;
+        font-family: $optional-font-family;
+    }
+    .description {
+        margin: 8px 0;
+        font-size: 16px;
+    }
+
+    &.type-freelance {
+        color: #556;
+    }
+    &.type-project {
+        color: #655;
+    }
+    &:hover {
+        color: initial;
     }
 }

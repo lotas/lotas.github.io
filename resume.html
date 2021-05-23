@@ -1,0 +1,68 @@
+---
+layout: default
+title: Resume
+menuVisible: 1
+---
+
+<p class="lead">
+	Backend, frontend, fullstack, devops, team lead.
+</p>
+
+<div class="row resume">
+	<div class="col-xs-12 col-sm-7">
+		<h3>
+			<span>Experience</span>
+			<span class="filters">
+				<a href="#">fulltime</a>
+				<a href="#">project</a>
+				<a href="#">freelance</a>
+			</span>
+		</h3>
+
+	{% for experience in site.data.experience %}
+		<div class="experience type-{{ experience.type }}">
+			<div class="title">
+				<a href="{{ experience.url }}">{{ experience.name }}</a>
+				<span class="location">{{ experience.location }}</span>
+				<span class="position">{{ experience.position }}</span>
+				<span class="type">{{ experience.type }}</span>
+			</div>
+			<div class="date">{{ experience.dates }}</div>
+			<div class="description">
+				{{ experience.description }}
+			</div>
+		</div>
+	{% endfor %}
+
+	</div>
+	<div class="col-xs-12 col-sm-3 col-sm-offset-1">
+		<h3><span>Skills</span></h3>
+		<div><strong>Javascript / Typescript / node.js</strong></div>
+		<div>Vue.js / React</div>
+		<div>Python / PHP / GO / Ruby</div>
+		<div><strong>Cloud:</strong> Google Cloud Platform, AWS</div>
+		<div>Docker, Kubernetes, Serverless</div>
+		<div>CI, CD, DevOps</div>
+		<div>PostgreSQL, RabbitMQ, MySQL, Redis</div>
+
+		<h3><span>Languages</span></h3>
+		<div>English - fluent</div>
+		<div>German - proficient</div>
+		<div>Russian / Belarussian - native</div>
+
+		<h3><span>Education</span></h3>
+		<div><strong>Grodno State University</strong></div>
+		<div class="text-info">1999 - 2004, Belarus</div>
+		<div>Bachelor of Science - Applied Maths and Information Technology. </div>
+
+		<h3><span>Opensource</span></h3>
+		<div><a href="https://github.com/lotas/contentful-graph">Contentful-graph</a> (javascript)</div>
+		<div><a href="https://github.com/lotas/contentful-graph-web">Contentful-graph-web</a> (next.js)</div>
+		<div><a href="https://github.com/lotas/mutiful">Mutiful</a> (Android Java)</div>
+		<div><a href="https://github.com/lotas/api.loliful.io">Loliful.io</a> (node.js)</div>
+		<div><a href="https://github.com/lotas/chat-app">Chat</a> (websockets, node.js, vue)</div>
+
+		<h3><span>Hobbies</span></h3>
+		<div>Arduino, Raspberry Pi, guitars, cycling, F1, photography, Drones</div>
+	</div>
+</div>

@@ -7,14 +7,15 @@
 
 // Our variables
 $base-font-family: Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
+$optional-font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+$base-font-size:   15px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
 $text-color:       #1b2a3d;
-$background-color: #fdfdfd;
+$background-color: #ecf7fc;
 $brand-color:      #285b9e;
 
 $grey-color:       #aaaaad;
@@ -22,7 +23,7 @@ $grey-color-light: lighten($grey-color, 20%);
 $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
-$content-width:    963px;
+$content-width:    1024px;
 
 $on-palm:          600px;
 $on-laptop:        800px;
@@ -47,6 +48,7 @@ $on-laptop:        800px;
 @import
         "base",
         "layout",
+        "flexbox",
         "syntax-highlighting",
         "svg-icon",
         "custom"
