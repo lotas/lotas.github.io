@@ -5,11 +5,14 @@
   position: Principal Specialist
   dates: Nov 2018 - Present
   description: >
-    Microservice based cloud architecture.<br/>
+    Microservice-based cloud architecture.<br/>
     Frontend applications typescript, vue.js, react, nuxt.js.<br/>
-    Serverless cloud functions to handle file uploads, report rendering, data storage interaction.
-    Report generation with puppeteer and node.js. Express.js, vue.js, vuex, vuex-orm, react-admin, plotly.js, typescript.
-    Containerized with docker and deployed with kubernetes. Backend with php + symfony, python + flask, node.js.
+    Serverless cloud functions to handle file uploads, report rendering, data storage interaction.<br/>
+    PDF generation with puppeteer and node.js. Express.js, vue.js, vuex, vuex-orm, react-admin, plotly.js, typescript.
+    Containerized with docker and deployed with kubernetes.<br/>
+    Backend with php + symfony, python + flask, node.js, go. RabbitMQ and Elasticsearch.<br/>
+    Managing and monitoring of serveral clusters with Helm, prometheus, grafana, loki.<br/>
+    ISO27001 certification.
 
 - name: uelco.co
   type: project
@@ -72,8 +75,10 @@
   position: System Architect, Backend
   dates: Nov 2017 - Nov 2018
   description: >
-    Microservice based architecture running Kubernetes.
-    Services written in node.js + sequelize + postgresql + rabbitmq, go, python + flask.
+    Microservice based architecture running Kubernetes.<br/>
+    Services written in node.js + sequelize + postgresql + rabbitmq, go, python + flask.<br/>
+    Design and implementation of microservices: user management, orders bookkeeping, fleet management. Communication with external services.<br/>
+    Opentelemetry integration, Jaeger, Kibana.
 
 - name: Croove
   type: fulltime
