@@ -17,13 +17,13 @@ Evolution of tooling and introduction of Docker Desktop improved things a lot. N
 
 This year I gave in and finally bought my first personal laptop since 2010. Because I was using laptops from work for my personal stuff from time to time. But magic of M1 silicon was too attracting to resist it.
 
-With M1 came new problems, especially with `x86` and `arm64` images and ability to run Docker at all. But it didn't took long to roll out first public betas for Developer Preview, so I decided to join this program.
+With M1 came new problems, especially with `x86` and `arm64` images and ability to run Docker at all. But it didn't take long to roll out first public betas for Developer Preview, so I decided to join this program.
 
 I wanted to get new releases faster and  communicate M1 specific issues.
 So I joined a [Docker Community Slack](dockercommunity.slack.com).
 
 There is a small form to enroll into [Docker Developer Preview Program](https://www.docker.com/community/get-involved/developer-preview).
-One of the questions is "What one feature what you add to Desktop?"
+One of the questions is "What one feature would you add to Desktop?"
 
 I realised that it would be nice to add Volume management and disk space management into the desktop app.
 
