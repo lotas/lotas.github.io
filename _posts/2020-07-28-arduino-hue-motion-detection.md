@@ -5,7 +5,7 @@ date:   2020-07-28
 tags: ["arduino", "sensors", "hue", "home automation"]
 ---
 
-
+Home improvement project with Arduino and HUE lights.
 
 # Controlling Phillips HUE lights with Arduino
 
