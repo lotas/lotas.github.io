@@ -3,7 +3,9 @@
   url: https://elucidate.co
   location: Berlin
   position: Principal Specialist
+  roles: Backend Engineer, Frontend Engineer, Team Lead, DevOps, Architect
   dates: Nov 2018 - Present
+  stack: Typescript, Node.js, Vue.js, React, Python, PHP, Golang, Kubernetes, PostgreSQL, RabbitMQ, Elasticsearch, Google Cloud Platform, AWS
   description: >
     Microservice-based cloud architecture.<br/>
     Frontend applications typescript, vue.js, react, nuxt.js.<br/>
@@ -13,9 +15,16 @@
     Backend with php + symfony, python + flask, node.js, go. RabbitMQ and Elasticsearch.<br/>
     Managing and monitoring of serveral clusters with Helm, prometheus, grafana, loki.<br/>
     ISO27001 certification.
+  achievments:
+    - Developed customer portal and admin applications
+    - Designed scalable microservice architecture for data processing
+    - Removed downtime on failed deployments
+    - Decreased build times using dedicated nodes and cached builds
+    - Implemented 100+ custom report components
+    - Succesfully implemented ISO27001 certification requirements
 
 - name: uelco.co
-  type: project
+  type: side-project
   url: https://uelco.co
   location:
   position: Backend/Frontend/DevOps
@@ -26,18 +35,23 @@
     Backend written with typescript + express.js + sequelize + PostgreSQL. Containerized with docker.
 
 - name: 4Ocean.com
-  type: freelance
+  type: part-time
   url: https://4ocean.com
-  location:
+  location: San Francisco, remote
   position: Backend/DevOps
   dates: Jul 2019 - Feb 2020
+  roles: Individual Contributor
+  stack: Google Cloud Platform, Serverless, API Integrations, Javascript
   description: >
     Implemented serverless architecture using node.js on <em>Google Cloud Platform</em> to handle real-time data synchronization.
     Hundreds of instances and several thousand live events per second at peak times (during campaigns).
     Vanilla javascript.
+  achievments:
+    - Implemented serverless solution to connect e-commerce platform for growing marketing needs
+    - Handling thousands of requests per second at peak times (during campaigns)
 
 - name: patientacumen.com
-  type: project
+  type: side-project
   url: https://patientacumen.com
   location:
   position: Backend/Frontend/DevOps
@@ -58,7 +72,7 @@
     Kubernetes, node.js + express.js + PostgreSQL backend, react-native + typescript mobile app.
 
 - name: loliful.io
-  type: project
+  type: side-project
   url: '#'
   location:
   position: Backend/Frontend/DevOps
@@ -73,12 +87,18 @@
   url: '#'
   location: Berlin
   position: System Architect, Backend
+  roles: Senior Backend Engineer, System Architect
   dates: Nov 2017 - Nov 2018
   description: >
     Microservice based architecture running Kubernetes.<br/>
     Services written in node.js + sequelize + postgresql + rabbitmq, go, python + flask.<br/>
     Design and implementation of microservices: user management, orders bookkeeping, fleet management. Communication with external services.<br/>
     Opentelemetry integration, Jaeger, Kibana.
+  achievments:
+    - Developed microservice based architecture and services
+    - Introduced development guidelines
+    - Connected external systems using RabbitMQ federation for real-time updates
+    - Created back-office solution for fleet management
 
 - name: Croove
   type: fulltime
