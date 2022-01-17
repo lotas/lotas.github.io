@@ -1,10 +1,22 @@
+- name: Mozilla
+  type: fulltime
+  url: https://mozilla.com
+  location: Berlin
+  position: Senior Software Engineer
+  roles: Software Engineer
+  dates: Jan 2022 - Present
+  stack: Python, Typescript
+  description: >
+    tbd
+  achievments: {}
+
 - name: elucidate.co
   type: fulltime
   url: https://elucidate.co
   location: Berlin
   position: Principal Specialist
   roles: Backend Engineer, Frontend Engineer, Team Lead, DevOps, Architect
-  dates: Nov 2018 - Present
+  dates: Nov 2018 - Jan 2022
   stack: Typescript, Node.js, Vue.js, React, Python, PHP, Golang, Kubernetes, PostgreSQL, RabbitMQ, Elasticsearch, Google Cloud Platform, AWS
   description: >
     Microservice-based cloud architecture.<br/>

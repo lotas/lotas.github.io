@@ -34,11 +34,20 @@
   },
   "work": [
     {
+      "company": "Mozilla",
+      "position": "Senior Software Engineer",
+      "website": "https://mozilla.com",
+      "startDate": "2022-01-15",
+      "summary": "Service engineering",
+      "highlights": []
+    },
+    {
       "company": "Elucidate",
       "position": "Principal Engineer",
       "website": "https://elucidate.co",
       "startDate": "2018-11-01",
-      "summary": "An innovative SaaS-based solution for FinCrime Risk Management.",
+      "endDate": "2022-01-14",
+      "summary": "Microservice-based cloud architecture. Frontend applications typescript, vue.js, react, nuxt.js. Serverless cloud functions to handle file uploads, report rendering, data storage interaction. PDF generation with puppeteer and node.js. Express.js, vue.js, vuex, vuex-orm, react-admin, plotly.js, typescript. Containerized with docker and deployed with kubernetes.Backend with php + symfony, python + flask, node.js, go. RabbitMQ and Elasticsearch. Managing and monitoring of serveral clusters with Helm, prometheus, grafana, loki. ISO27001 certification.",
       "highlights": [
         "Microservices",
         "Kubernetes",
