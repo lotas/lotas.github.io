@@ -112,7 +112,7 @@ This will open an editor to specify the configuration for the new VM, like archi
 
 There are plenty of [examples](https://github.com/lima-vm/lima/tree/master/examples) how to configure for different use-cases (k3s, k8s, alpine, centos, etc)
 
-Can run x86 with quemu emulation, but is rather slow. While aarch64 feels like native.
+Can run x86 with qemu emulation, but is rather slow. While aarch64 feels like native.
 
 
 ```sh
