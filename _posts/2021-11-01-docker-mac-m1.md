@@ -28,7 +28,14 @@ Name                    State             IPv4             Image
 primary                 Stopped           --               Ubuntu 20.04 LTS
 ```
 
-Primary should be installed by default, if not one can run `multipass launch --name primary --cpus 2 --memory 4096`.
+Primary should be installed by default, if not one can run `multipass launch --name primary --cpus 2 --mem 4G`.
+
+If you see something like `Launch failed: Operation canceled` you can run according to [this comment](https://github.com/canonical/multipass/issues/2288#issuecomment-963583241):
+
+```sh
+sudo launchctl stop com.canonical.multipassd
+sudo launchctl start com.canonical.multipassd
+```
 
 Controlling it's state is as easy as `multipass start`, `multipass stop`, to enter `multipass shell`.
 
