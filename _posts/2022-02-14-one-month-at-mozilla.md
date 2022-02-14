@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "First month at Mozilla"
-date:   2022-02-15
+date:   2022-02-14
 tags: ["mozilla" ]
 ---
 
