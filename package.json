@@ -12,7 +12,7 @@
     "resume-cli": "^0.4.19"
   },
   "scripts": {
-    "start": "jekyll serve",
+    "start": "docker run --rm -v $PWD:/srv/jekyll:Z -p 4000:4000 jekyll/jekyll jekyll serve",
     "resume:publish": "resume publish --theme shorter-bill",
     "resume:publish:2": "resume publish --theme spartacus",
     "resume:export:pdf": "resume export cv.pdf --theme elegant"

@@ -1,4 +1,9 @@
-# First month at Mozilla
+---
+layout: post
+title:  "First month at mozilla"
+date:   2022-02-14
+tags: ["mozilla"]
+---
 
 It's been one month since I've joined Mozilla as a software engineer. I am part of the system engineering team that handles [taskcluster](https://taskcluster.net/).
 
