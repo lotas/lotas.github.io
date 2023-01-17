@@ -5,7 +5,7 @@ date:   2023-01-15
 tags: ["mozilla", "taskcluster"]
 ---
 
-My last post on this topic [one month at Mozilla](/2022-02-14-one-month-at-mozilla) was posted as the title suggests when I just started.
+My last post on this topic [one month at Mozilla](/2022/02/14/one-month-at-mozilla) was posted as the title suggests when I just started.
 
 My contribution at that point was a single [pull request](https://github.com/taskcluster/taskcluster/pull/5163) as I was struggling to understand what is happening and how things work.
 
