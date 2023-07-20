@@ -5,12 +5,28 @@ date:   2021-11-01
 tags: ["docker", "mac", "arm", "m1"]
 ---
 
-Docker Desktop is not the only way to run Docker on Mac with M1 chips (as of November 2021).
+Docker Desktop is not the only way to run Docker on Mac with M1 chips (as of November 2021, updated July 2023).
 
 Important thing to know and understand is that your docker images must have either aarch64 (arm64) or x86 (amd64) architecture.
 Afaik, you can mix both to some extent, but only with Docker Desktop.
 
 I experimented with alternatives, and they are quite nice to work with, but not everyone knows about them.
+
+
+## [OrbStack](https://orbstack.dev/)
+
+I've learned about [OrbStack](https://orbstack.dev/) in June 2023. It is a [similar to WSL2](https://docs.orbstack.dev/architecture) approach to run lightweight Linux virtual machine on M1 mac.
+It integrates itself into command line and gives you both `docker` support and ability to run linux virtual machine.
+
+You can use `orb` or `orbctl` to manage VMs, or use docker right away.
+
+```sh
+$ docker run -it -p 80:80 docker/getting-started
+```
+
+UI itself is minimalistic, yet powerful and extremely fast. It can ran 20+ [taskcluster](https://github.com/taskcluster/taskcluster) containers easily, and CPU usage is minimal, comparing to Docker Desktop.
+
+> As of 2023 OrbStack is my favourite choice on M1/M2 Macs due to it's low footprint and speed.
 
 
 ## Multipass
@@ -157,6 +173,9 @@ podman machine stop  0.01s user 0.02s system 27% cpu 0.110 total
 ## [Docker desktop](https://www.docker.com/products/docker-desktop)
 
 Yep, rather slow, compared to lima and multipass, but can run both x86 and aarch64 images simultaneously.
+
+Upd 2023: Seems like Docker Desktop was seriously improved and provides significantly better performance,
+also UI gives much more options now for monitoring, viewing files and seamlessly executing in containers.
 
 
 ## [UTM](https://mac.getutm.app/)
