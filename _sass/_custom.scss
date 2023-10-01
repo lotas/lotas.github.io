@@ -9,6 +9,13 @@ a[data-lang] {
 	border-bottom: 1px dashed $brand-color;
 }
 
+.post a {
+    border-bottom: 1px dashed $brand-color;
+    &:hover {
+        border-bottom: initial;
+    }
+}
+
 .pull-right {
 	float: right;
 }
