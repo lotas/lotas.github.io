@@ -31,6 +31,14 @@ menuVisible: 1
 			<div class="description">
 				{{ experience.description }}
 			</div>
+			{% if experience.achievements %}
+      <h5 class="subsection">Achievements:</h5>
+		  <ul class="achievements">
+      {% for achievement in experience.achievements %}
+        <li>{{ achievement }}</li>
+      {% endfor %}
+      </ul>
+      {% endif %}
 		</div>
 	{% endfor %}
 

@@ -2,13 +2,18 @@
   type: fulltime
   url: https://mozilla.com
   location: Berlin
-  position: Senior Software Engineer
+  position: Staff Software Engineer
   roles: Software Engineer
   dates: Jan 2022 - Present
-  stack: Python, Typescript
+  stack: Python, Typescript, GO
   description: >
-    tbd
-  achievments: {}
+    Working on Taskcluster project, which is a task execution framework that is used by Mozilla to run tasks in CI/CD pipelines.<br/>
+    Node.js, Python, GO, Postgres, RabitMQ, Docker, Kubernetes, AWS, GCP, Azure.<br/>
+  achievements:
+    - Improved developer experience by making whole project run locally with docker-compose
+    - Migrated whole codebase to ESM modules
+    - Reduced number of 502 load balancer errors from 50k daily to 0
+    - Improved stability of cloud workers provisioning
 
 - name: elucidate.co
   type: fulltime
@@ -27,7 +32,7 @@
     Backend with php + symfony, python + flask, node.js, go. RabbitMQ and Elasticsearch.<br/>
     Managing and monitoring of serveral clusters with Helm, prometheus, grafana, loki.<br/>
     ISO27001 certification.
-  achievments:
+  achievements:
     - Developed customer portal and admin applications
     - Designed scalable microservice architecture for data processing
     - Removed downtime on failed deployments
@@ -58,7 +63,7 @@
     Implemented serverless architecture using node.js on <em>Google Cloud Platform</em> to handle real-time data synchronization.
     Hundreds of instances and several thousand live events per second at peak times (during campaigns).
     Vanilla javascript.
-  achievments:
+  achievements:
     - Implemented serverless solution to connect e-commerce platform for growing marketing needs
     - Handling thousands of requests per second at peak times (during campaigns)
 
@@ -106,7 +111,7 @@
     Services written in node.js + sequelize + postgresql + rabbitmq, go, python + flask.<br/>
     Design and implementation of microservices: user management, orders bookkeeping, fleet management. Communication with external services.<br/>
     Opentelemetry integration, Jaeger, Kibana.
-  achievments:
+  achievements:
     - Developed microservice based architecture and services
     - Introduced development guidelines
     - Connected external systems using RabbitMQ federation for real-time updates
@@ -175,4 +180,3 @@
   dates: Sep 2005 - Oct 2008
   description: >
     Wide range of projects and products with PHP, C#, ASP.NET, jQuery, prototype.js, Ext.js.
-
