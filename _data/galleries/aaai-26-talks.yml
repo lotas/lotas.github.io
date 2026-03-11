@@ -1,0 +1,21 @@
+- file: "img/aaai-26/IMG_2146 Large.jpeg"
+  alt: "AI reinforcement learning phases and research roadmap presented at AAAI 2026."
+  caption: "RL research roadmap"
+  link: "https://arxiv.org/abs/2509.08827"
+
+- file: "img/aaai-26/IMG_2147 Large.jpeg"
+  alt: "Conference slide on Test-Time Reinforcement Learning with data distribution graphs."
+  caption: "Test-Time Reinforcement Learning"
+  link: "https://arxiv.org/abs/2504.16084"
+
+- file: "img/aaai-26/IMG_2171 Large.jpeg"
+  alt: "Conference slide on Multi-Agent Debate with a presenter speaking."
+  caption: "Multi-Agent Debate for QA"
+
+- file: "img/aaai-26/IMG_2218 Large.jpeg"
+  alt: "Conference slide detailing the evolution of Large Language Models with audio."
+  caption: "The Next Frontier: Learning to Listen"
+
+- file: "img/aaai-26/IMG_2219 Large.jpeg"
+  alt: "Conference slide detailing AI evolution from models to agents and societal impact."
+  caption: "From Language Models to Agent Interconnection"

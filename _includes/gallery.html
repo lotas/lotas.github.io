@@ -1,0 +1,16 @@
+{% assign gallery = site.data.galleries[include.gallery] %}
+{% if gallery %}
+<div class="gallery" data-gallery="{{ include.gallery }}">
+  {% for image in gallery %}
+  <figure class="gallery__item">
+    <img src="{{ site.baseurl }}/{{ image.file }}"
+         alt="{{ image.alt }}"
+         data-index="{{ forloop.index0 }}"
+         loading="lazy">
+    {% if image.caption and image.caption != "" %}
+    <figcaption>{% if image.link %}<a href="{{ image.link }}" target="_blank" rel="noopener">{{ image.caption }}</a>{% else %}{{ image.caption }}{% endif %}</figcaption>
+    {% endif %}
+  </figure>
+  {% endfor %}
+</div>
+{% endif %}

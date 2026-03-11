@@ -12,6 +12,7 @@ exclude:
   - "credentials.json"
   - "Gruntfile.js"
   - "package.json"
+  - "mutiful/"
 
 # Build settings
 markdown: kramdown
@@ -23,10 +24,10 @@ footer-links:
   facebook:
   flickr:
   github: lotas
-  instagram: 
+  instagram:
   linkedin: yaraslaukurmyza
   pinterest:
   rss: rss # just type anything here for a working RSS icon, make sure you set the "url" above!
-  twitter: lotask
+  twitter:
   stackoverflow: yarik # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: user/lotassatol

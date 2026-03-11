@@ -9,10 +9,11 @@
   "devDependencies": {
     "jsonresume-theme-shorter-bill": "^0.2.0",
     "jsonresume-theme-spartacus": "^1.0.0",
-    "resume-cli": "^0.4.19"
+    "resume-cli": "^3.0.8"
   },
   "scripts": {
-    "start": "docker run --rm -v $PWD:/srv/jekyll:Z -p 4000:4000 jekyll/jekyll jekyll serve",
+    "docker:build": "docker build -t jekyll-site .",
+    "start": "docker run --rm -v $PWD:/site -p 4000:4000 -p 35729:35729 jekyll-site",
     "resume:publish": "resume publish --theme shorter-bill",
     "resume:publish:2": "resume publish --theme spartacus",
     "resume:export:pdf": "resume export cv.pdf --theme elegant"

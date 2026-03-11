@@ -1,0 +1,52 @@
+- file: "img/aaai-26/IMG_2136 Large.jpeg"
+  alt: "Conference poster detailing AI research on vehicle control in racing simulations."
+  caption: "AI policy for Gran Turismo 7"
+  link: "https://arxiv.org/abs/2511.09737"
+
+- file: "img/aaai-26/IMG_2144 Large.jpeg"
+  alt: "Research paper on enhancing meme understanding with multimodal fusion."
+  caption: "Multimodal meme analysis"
+  link: "https://arxiv.org/abs/2511.11126"
+
+- file: "img/aaai-26/IMG_2145 Large.jpeg"
+  alt: "Research poster on LLM toxicity triggered by emojis."
+  caption: "Emoji-induced LLM toxicity"
+  link: "https://arxiv.org/abs/2509.11141"
+
+- file: "img/aaai-26/IMG_2169 Large.jpeg"
+  alt: "Research paper on Reinforcement Learning for speech translation."
+  caption: "REINA: simultaneous speech translation"
+  link: "https://arxiv.org/abs/2508.04946"
+
+- file: "img/aaai-26/IMG_2170 Large.jpeg"
+  alt: "Conference slide detailing MARL platform, Unreal-MAP, and simulation workflow."
+  caption: "Unreal-MAP: Multi-Agent RL platform"
+  link: "https://arxiv.org/abs/2503.15947"
+
+- file: "img/aaai-26/IMG_2225 Large.jpeg"
+  alt: "Research poster detailing a Gait Transformer for human identification."
+  caption: "Gait Transformer for human recognition"
+
+- file: "img/aaai-26/IMG_2226 Large.jpeg"
+  alt: "Conference poster detailing Amazon's research on detecting humorous moments in videos."
+  caption: "Humor detection in long-form video"
+  link: "https://arxiv.org/abs/2602.15381"
+
+- file: "img/aaai-26/IMG_2287 Large.jpeg"
+  alt: "Research poster on LLM-based fault tolerance in multi-agent systems."
+  caption: "Byzantine fault tolerance with LLMs"
+  link: "https://arxiv.org/abs/2511.10400"
+
+- file: "img/aaai-26/IMG_2288 Large.jpeg"
+  alt: "AAAI 2026 conference paper on MusicRec: Multi-modal Recommendation."
+  caption: "MusicRec: multi-modal recommendation"
+
+- file: "img/aaai-26/IMG_2289 Large.jpeg"
+  alt: "Conference poster detailing PointSLAM++: a visual SLAM system."
+  caption: "PointSLAM++ with Gaussian splatting"
+  link: "https://arxiv.org/abs/2601.11617"
+
+- file: "img/aaai-26/IMG_2290 Large.jpeg"
+  alt: "AAAI 2026 conference paper on DiffAgent for diffusion acceleration."
+  caption: "DiffAgent: diffusion model optimization"
+  link: "https://arxiv.org/abs/2601.03178"
