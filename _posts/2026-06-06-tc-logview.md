@@ -113,7 +113,7 @@ So a big part of building `tc-logview` was handing that off. If a teammate can r
 
 ## What I actually learned
 
-The code was quick to write. What took years was the investigating behind it - the manual, one-incident-at-a-time kind - slowly building up a sense of which log to check first and what "normal" even looks like.
+The code was quick to write. What took years was the investigating behind it - manual at first, then a growing pile of saved Python queries ([taskcluster-investigator](https://github.com/lotas/taskcluster-investigator)) - slowly building up a sense of which log to check first and what "normal" even looks like.
 
 Finally this no longer lives only in my head. The investigation paths are written down as [a small library of skills](https://github.com/taskcluster/tc-logview/tree/main/.claude/skills/debug-tc-logs/examples) that ship with the tool - [debugging the Azure provider](https://github.com/taskcluster/tc-logview/blob/main/.claude/skills/debug-tc-logs/examples/azure-provider-debugging.md), [chasing down a task failure](https://github.com/taskcluster/tc-logview/blob/main/.claude/skills/debug-tc-logs/examples/task-failure-debugging.md), tracking down [the 502s I wrote about here](/2024/03/15/gcp-load-balancer-502s), queue health, worker removals - step by step, with the queries to run and the thresholds that should worry you. A teammate can follow them, and so can an agent.
 

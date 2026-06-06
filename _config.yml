@@ -12,7 +12,6 @@ exclude:
   - "credentials.json"
   - "Gruntfile.js"
   - "package.json"
-  - "mutiful/"
 
 # Build settings
 markdown: kramdown
