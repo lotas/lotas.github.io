@@ -3,17 +3,25 @@
   url: https://mozilla.com
   location: Berlin
   position: Staff Software Engineer
-  roles: Software Engineer
+  roles: Software Engineer, Tech Lead, DevOps
   dates: Jan 2022 - Present
-  stack: Python, Typescript, GO
+  stack: Python, TypeScript, Go, PostgreSQL, RabbitMQ, Kubernetes, GCP/AWS/Azure
   description: >
-    Working on Taskcluster project, which is a task execution framework that is used by Mozilla to run tasks in CI/CD pipelines.<br/>
-    Node.js, Python, GO, Postgres, RabitMQ, Docker, Kubernetes, AWS, GCP, Azure.<br/>
+    Working on Taskcluster, the task-execution platform that runs Mozilla's CI/CD pipelines (hundreds of thousands of tasks daily).<br/>
+    De-facto owner of worker-manager and cloud provisioning across GCP, AWS and Azure; focus on reliability, observability, cost, security, and ML/AI tooling.<br/>
+    Node.js, Python, Go, Postgres, RabbitMQ, Docker, Kubernetes, LightGBM, Prometheus/Grafana.<br/>
   achievements:
-    - Improved developer experience by making whole project run locally with docker-compose
-    - Migrated whole codebase to ESM modules
-    - Reduced number of 502 load balancer errors from 50k daily to 0
-    - Improved stability of cloud workers provisioning
+    - Built Queue Forecasting, an ML system (LightGBM) predicting CI task wait and run times (p50/p90) for every scheduled task, with anomaly detection and live dashboards
+    - Created tc-logview, a schema-aware log-investigation tool with built-in Claude Code skills, adopted across RelOps, RelEng and other teams
+    - Cut Azure worker provisioning time ~3-4x (≈10-20 min down to 3-5 min) by moving to ARM templates, reducing idle-VM cost and CI latency
+    - Reduced 502 load balancer errors from 50k daily to 0
+    - Authored and shipped RFCs for worker-manager launch configs and task/run priority
+    - Migrated platform observability to MozCloud/Grafana; added worker-manager and Azure rate-limit metrics
+    - Redesigned worker lifecycle into a provisioner-centered termination policy (minCapacity, launch configs)
+    - Diagnosed and fixed provisioning regressions causing tens of thousands of zombie / claim-expired workers
+    - Triaged and fixed security issues across the platform (SSRF, GCP metadata injection, GraphQL scope-elevation)
+    - Migrated the codebase to ESM modules and enabled the whole project to run locally via docker-compose
+    - Introduced a team intake/prioritization model to manage reactive load and protect planned work
 
 - name: elucidate.co
   type: fulltime
@@ -38,7 +46,7 @@
     - Removed downtime on failed deployments
     - Decreased build times using dedicated nodes and cached builds
     - Implemented 100+ custom report components
-    - Succesfully implemented ISO27001 certification requirements
+    - Successfully implemented ISO27001 certification requirements
 
 - name: uelco.co
   type: side-project
